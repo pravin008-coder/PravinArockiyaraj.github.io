@@ -1,29 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pravin | Java Developer | software Engineer</title>
-    <style>
-        body { font-family: Arial; text-align: center; padding: 50px; }
-        h1 { color: #2c3e50; }
-        .section { margin-top: 30px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pravin | Java Developer</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #1f4037;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-weight: 500;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1f4037;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #1f4037;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #99f2c8;
+    text-decoration: none;
+}
+
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
 </head>
+
 <body>
 
+<!-- Hero Section -->
+<section class="hero">
     <h1>Hi, I'm Pravin 👋</h1>
-    <p>Java Developer | JDBC | SQL | Spring Boot</p>
+    <p>Java Developer | Spring Boot | SQL | Backend Enthusiast</p>
+</section>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <p><b>Student Management System</b><br>
-        Java, JDBC, MySQL based CRUD application.</p>
-    </div>
+<!-- About -->
+<section class="section">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Passionate BCA graduate and aspiring Java Backend Developer with strong 
+        knowledge in Java, JDBC, MySQL, and Spring Boot. 
+        Focused on building scalable backend applications and continuously 
+        improving problem-solving and system design skills.
+    </p>
+</section>
 
-    <div class="section">
-        <h2>Contact</h2>
-        <p>Email: pravinarockiyaraj20@gmail.com</p>
-        <p>GitHub: https://github.com/pravin008-coder</p>
+<!-- Skills -->
+<section class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill">Java</div>
+        <div class="skill">JDBC</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Spring Boot</div>
+        <div class="skill">REST APIs</div>
     </div>
+</section>
+
+<!-- Projects -->
+<section class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Task Management System</h3>
+            <p>Java, JDBC & MySQL based CRUD application with REST APIs tested using Postman.</p>
+            <a href="https://github.com/yourusername/projectname" target="_blank">View Code →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Library Management System</h3>
+            <p>Spring Boot REST API application with layered architecture and database integration.</p>
+            <a href="https://github.com/yourusername/projectname" target="_blank">View Code →</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Email: pravinarockiyaraj20@gmail.com</p>
+    <p>
+        <a href="https://www.linkedin.com/in/pravin-arockiya-raj-6050473b0/">LinkedIn</a> |
+        <a href="https://github.com/pravin008-coder" target="_blank">GitHub</a>
+    </p>
+</footer>
 
 </body>
 </html>
